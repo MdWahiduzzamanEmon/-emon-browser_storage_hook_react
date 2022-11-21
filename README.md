@@ -7,8 +7,6 @@ This is a React hook that allows you to use the browser storage API in a simple 
 Use the package manager [npm/yarn](https://www.npmjs.com/) to install the package.((please read the documentation first))
 
 ```bash
-```
-```bash
 npm i browser_storage_hook_react
 ```
 ```bash
