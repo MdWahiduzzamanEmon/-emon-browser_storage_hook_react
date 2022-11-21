@@ -1,5 +1,5 @@
 {
-	"name": "@emon/browser_storage_hook_react",
+	"name": "browser_storage_hook_react",
 	"version": "1.0.0",
 	"private": false,
 	"description": "React hook for localStorage and SessionStorage",
