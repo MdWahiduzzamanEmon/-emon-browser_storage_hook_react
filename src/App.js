@@ -5,17 +5,17 @@ import { useState } from "react";
 import useLocalStorage from './lib/components/LocalStorage/LocalStorage';
 
 function App() {
-  const [name, setName] = useState('');
-  const [add, setAdd] = useLocalStorage("UserName", "null");
-  const [count, setCount] = useLocalStorage("Count", 0);
+  // const [name, setName] = useState('');
+  // const [add, setAdd] = useLocalStorage("UserName", "null");
+  // const [count, setCount] = useLocalStorage("Count", 0);
 
-  const addInLocal = () => {
-    setAdd(name);
-  }
+  // const addInLocal = () => {
+  //   setAdd(name);
+  // }
   return (
     <div className="App">
       {/*  */}
-      <p>Name: {
+      {/* <p>Name: {
         add
       }</p>
       <input type="text" placeholder="Enter your name"
@@ -26,10 +26,10 @@ function App() {
         onClick={addInLocal}
       >
         Add name
-      </button>
+      </button> */}
 
       {/* // */}
-      <br></br>
+      {/* <br></br>
       <br></br>
       <br></br>
       <button
@@ -42,7 +42,7 @@ function App() {
         setCount(0);
       }}>
         Reset Count
-      </button>
+      </button> */}
     </div>
   );
 }
