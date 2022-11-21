@@ -14,7 +14,7 @@
 /docker-compose.yml
 /docker-compose.prod.yml
 /docker-compose.dev.yml
-/dist
+dist/
 /nginx.conf
 /nginx.conf.prod
 /nginx.conf.dev
