@@ -10,6 +10,20 @@
 
 # production
 /build
+/Dockerfile
+/docker-compose.yml
+/docker-compose.prod.yml
+/docker-compose.dev.yml
+/dist
+/nginx.conf
+/nginx.conf.prod
+/nginx.conf.dev
+/nginx.conf.prod
+/nginx.conf.dev
+/nginx.conf.prod
+/nginx.conf.dev
+/nginx.conf.prod
+
 
 # misc
 .DS_Store
