@@ -1,11 +1,10 @@
 import { useState } from "react";
 
 function setCookie(cname, cvalue, exdays) {
-    const cNewValue = JSON.stringify(cvalue);
     const d = new Date();
     d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
     let expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cNewValue + ";" + expires + ";path=/";
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
   
   function getCookie(cname) {
@@ -17,8 +16,7 @@ function setCookie(cname, cvalue, exdays) {
         c = c.substring(1);
       }
       if (c.indexOf(name) == 0) {
-        const cParsed = JSON.parse(c.substring(name.length, c.length));
-        return cParsed;
+        return c.substring(name.length, c.length);
       }
     }
     return "";
@@ -29,9 +27,9 @@ function setCookie(cname, cvalue, exdays) {
       try {
         const item = getCookie(key);
         if (item !== "" && item !== null && item !== undefined) {
-          return item;
+          return JSON.parse(item);
         } else {
-          setCookie(key, defaultValue, exp);
+          setCookie(key, JSON.stringify(defaultValue), exp);
           return defaultValue;
         }
       } catch (error) {
@@ -45,7 +43,7 @@ function setCookie(cname, cvalue, exdays) {
         const valueToStore =
           value instanceof Function ? value(storedValue) : value;
         setStoredValue(valueToStore);
-        setCookie(key, defaultValue, exp);
+        setCookie(key, JSON.stringify(valueToStore), exp);
       } catch (error) {
         console.error(error);
       }
