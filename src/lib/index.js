@@ -5,6 +5,6 @@
 
 import useSessionStorage from "./components/SessionStorage/SessionStorage";
 import useLocalStorage from "./components/LocalStorage/LocalStorage";
-import { getCookie, setCookie } from "./components/Cookies/Cookies";
+import { getCookie, setCookie, useCookie } from "./components/Cookies/Cookies";
 
-export { useSessionStorage, useLocalStorage, setCookie, getCookie };
+export { useSessionStorage, useLocalStorage, setCookie, getCookie, useCookie };
