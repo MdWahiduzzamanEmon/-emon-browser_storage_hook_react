@@ -1,0 +1,2 @@
+
+function setCookie(e,t,o){let i=new Date;i.setTime(i.getTime()+864e5*o);let n="expires="+i.toUTCString();document.cookie=e+"="+t+";"+n+";path=/"}function getCookie(e){let t=e+"=",o=document.cookie.split(";");for(let i=0;i<o.length;i++){let n=o[i];for(;" "==n.charAt(0);)n=n.substring(1);if(0==n.indexOf(t))return n.substring(t.length,n.length)}return""}export{setCookie,getCookie};  

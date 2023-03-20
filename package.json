@@ -1,8 +1,8 @@
 {
-	"name": "react-lazy-loading",
-	"version": "1.1.0",
+	"name": "browser_storage_hook_react",
+	"version": "1.0.0",
 	"private": false,
-	"description": "React lazy loading hook",
+	"description": "React hook for localStorage and SessionStorage",
 	"author": "Md Wahiduzzaman Emon",
 	"license": "ISC",
 	"main": "dist/index.js",
@@ -14,8 +14,10 @@
 	"keywords": [
 		"react",
 		"react-hook",
-		"react-lazy-loading",
-		"react-lazy-loading-hook"
+		"browser-storage",
+		"local-storage",
+		"SessionStorage",
+		"storage"
 	],
 	"repository": {
 		"type": "git",
