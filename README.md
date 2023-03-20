@@ -53,10 +53,6 @@ setCookie('key', 'value', expiry);
 
 ```
 
-
-
-```
-
 ## Local Storage and Session Storage
 
 ```
