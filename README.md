@@ -19,18 +19,41 @@ https://user-images.githubusercontent.com/83487057/203020447-75919272-9e3d-4abd-
 ## Importing
 
 ```
-import { useLocalStorage, useSessionStorage, setCookie, getCookie } from 'browser_storage_hook_react';
+import { useLocalStorage, useSessionStorage, useCookie, setCookie, getCookie } from 'browser_storage_hook_react';
 
 ```
 
 ## How to use it
 
+### Local Storage
+
 ```
 const [value, setValue] = useLocalStorage('key', 'defaultValue');
+
+```
+### Session Storage
+
+```
 const [value, setValue] = useSessionStorage('key', 'defaultValue');
 
+```
+
+### Cookie
+
+```
+const [value, setValue] = useCookie('key', 'defaultValue', expiry);
+
+```
+
+### Manually set and get cookie
+
+```
 const value = getCookie('key');
 setCookie('key', 'value', expiry);
+
+```
+
+
 
 ```
 

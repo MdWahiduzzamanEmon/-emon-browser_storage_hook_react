@@ -24,14 +24,14 @@ function setCookie(cname, cvalue, exdays) {
     return "";
   }
   
-  const useCookie = (key, defaultValue) => {
+  const useCookie = (key, defaultValue, exp=365) => {
     const [storedValue, setStoredValue] = useState(() => {
       try {
         const item = getCookie(key);
         if (item !== "" && item !== null && item !== undefined) {
           return item;
         } else {
-          setCookie(key, defaultValue, 365);
+          setCookie(key, defaultValue, exp);
           return defaultValue;
         }
       } catch (error) {
@@ -45,7 +45,7 @@ function setCookie(cname, cvalue, exdays) {
         const valueToStore =
           value instanceof Function ? value(storedValue) : value;
         setStoredValue(valueToStore);
-        setCookie(key, defaultValue, 365);
+        setCookie(key, defaultValue, exp);
       } catch (error) {
         console.error(error);
       }
