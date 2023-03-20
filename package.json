@@ -1,6 +1,6 @@
 {
 	"name": "browser_storage_hook_react",
-	"version": "1.0.0",
+	"version": "1.2.0",
 	"private": false,
 	"description": "React hook for localStorage and SessionStorage",
 	"author": "Md Wahiduzzaman Emon",
